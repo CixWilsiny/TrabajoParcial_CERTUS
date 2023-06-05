@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body style="background: url('images/main_bg.jpg');">
+    <main class="pageform">
+        <!-- Formulario para la creación de una cuenta -->
+        <form id="formCreateAccount" action="recibido.html" method="post">
+            <!-- Título del formulario -->
+            <h2>Formulario de registro</h2>
+
+            <!-- Entrada Nombre -->
+            <div>
+                <label for="txtNombre">Nombres:</label>
+                <input class="formElemento" type="text" name="nombre" id="txtNombre" maxlength="50" required>
+            </div>
+
+            <!-- Entrada Apellidos -->
+            <div>
+                <label for="txtApellidos">Apellidos:</label>
+                <input class="formElemento" type="text" name="apellidos" id="txtApellidos" maxlength="50">
+            </div>
+
+            <!-- Entrada DNI -->
+            <div>
+                <label for="intDni">DNI:</label>
+                <input class="formElemento" type="tel" name="dni" id="intDni" maxlength="8" required>
+            </div>
+
+            <!-- Entrada email -->
+            <div>
+                <label for="txtEmail">Email:</label>
+                <input class="formElemento" type="email" name="email" id="txtEmail" maxlength="100" required>
+            </div>
+
+            <!-- Entrada Fecha de nacimiento -->
+            <div>
+                <label for="intFechaNac">Fecha de nacimiento:</label>
+                <input type="date" name="fechanacimiento" id="intFechaNac" min="1970/1/1" max="2030/12/31" required>
+            </div>
+
+            <!-- Entrada Sexo -->
+            <div>
+                <p>Sexo</p>
+                <input type="radio" name="sexo" id="bolMasculino" value="m">
+                <label for="bolMasculino" style="display:inline">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="bolFemenino" value="f">
+                <label for="bolFemenino" style="display:inline">Femenino</label>
+            </div>
+
+            <!-- Entrada Usuario -->
+            <div>
+                <label for="txtUsuario">Usuario:</label>
+                <input class="formElemento" type="text" name="usuario" id="txtUsuario" required>
+            </div>
+
+            <!-- Entrada Contraseña -->
+            <div>
+                <label for="txtClave">Contraseña:</label>
+                <input class="formElemento" type="password" name="clave" id="txtClave" required maxlength="60">
+            </div>
+
+            <!-- Entrada Celular -->
+            <div>
+                <label for="intCelular">Celular:</label>
+                <input type="tel" name="celular" id="intCelular" maxlength="13">
+            </div>
+
+            <!-- Entrada Dirección -->
+            <div>
+                <label for="txtDireccion">Dirección:</label>
+                <input class="formElemento" type="text" name="direccion1" id="txtDireccion" maxlength="100">
+                <br>
+                <input class="formElemento" ="text" name="direccion2" id="txtDireccion" maxlength="100">
+            </div>
+
+            <!-- Entrada Condiciones -->
+            <div>
+                <label for="bolAcepta">
+                    <input type="checkbox" name="acepta" id="bolAcepta" required>
+                    Acepto las <a href="#">condiciones</a> para crear la cuenta
+                </label>
+            </div>
+
+            <!-- Botón Enviar -->
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

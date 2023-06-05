@@ -1,0 +1,145 @@
+/* Fuentes externas Google */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap');
+
+/* Estilo global */
+* {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.05em;
+    color: #1c1c1c;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+  padding: 0px;  
+  margin: 0px;
+}
+
+header{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #e93f01;
+    background-image: url("images/header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header h2{
+    text-align: center;
+    margin: 0px;
+    color:goldenrod;
+}
+
+/* Estilo título 1*/
+h1 {
+    font-size: 3em;
+    font-family: 'Alkatra', cursive;
+    color:goldenrod;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Estilo título 2*/
+h2 {
+    font-size: 1.5em;
+    color: #154686;
+}
+
+/* Página formulario */
+.pageform {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:darkgray;
+    padding: 20px 40px;
+}
+
+/* Página Catálogo */
+.paginaCatalogo{
+    max-width: 1320px;
+    margin: 0 auto;
+    background-color:lightgray;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Artículos */
+article{
+    width: 23%;
+    min-width: 280px;
+    display: inline-block;
+    border: goldenrod 2px solid;
+    margin: 20px 7px 0px;
+}
+
+/* Imágenes */
+.imgProducto{
+    width: 100%;
+}
+
+article h3{
+    margin: 6px;
+    font-weight: 500;
+    height: 90px;
+}
+
+article p{
+    margin: 10px 0px;
+}
+
+article button{
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 6px 15px;
+}
+
+article:hover{
+    border: #e93f01 1px dotted;
+}
+
+.precioOriginal{
+    text-decoration: line-through;
+}
+
+.precioDescuento{
+    color:goldenrod;
+    font-weight: 500;
+}
+
+.precioFinal{
+    font-weight: 700;
+}
+
+/* Pie de página */
+footer{
+    background: #0f0300;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Elementos del formulario */
+label {
+    display: block;
+}
+
+form#formCreateAccount div{
+    margin-bottom: 20px;
+}
+
+.formElemento {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Estilos de la página recibido */
+
+div.recibido{
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    border: #e93f01 2px solid;
+    border-radius: 10px;
+    text-align: center;
+}
